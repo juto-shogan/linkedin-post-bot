@@ -5,7 +5,7 @@ from google import genai
 g = Github('YOUR_GITHUB_ACCESS_TOKEN')
 client = genai.Client(api_key="YOUR_GOOGLE_GENAI_API_KEY")
 
-# Replace with your GitHub username/repository name
+# Replace with your GitHub_username/repository_name
 repo_name = "juto-shogan/adidas-Analysis"
 repo = g.get_repo(repo_name)
 
@@ -29,6 +29,8 @@ repo_info = {
 # Generating linkedin post using using gemini
 response = client.models.generate_content(
     model="gemini-2.5-flash", 
+    # The prompt for generating the LinkedIn post
+    # this is justa template, you can modify it as needed
     contents=f"""
     You are an expert technical writer specializing in LinkedIn content. 
     Your task is to generate a professional LinkedIn post announcing a new GitHub project. 
