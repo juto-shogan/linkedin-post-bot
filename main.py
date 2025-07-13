@@ -11,7 +11,7 @@ client = genai.Client(api_key=gemini_api_key)
 
 while True:
     # Replace with your GitHub_username/repository_name
-    repo1 = input(f"{username} please enter your repository_name: ")
+    repo1 = input(f"{username}, please enter your repository_name: ")
     repo_name = f"{username}/{repo1}"
     print(f"Fetching repository: {repo_name}")
 
@@ -52,6 +52,7 @@ while True:
         - Encourage engagement (e.g., asking for feedback or linking to the repo).
         - Use a professional and engaging tone.
         - Be easily copy-paste ready for LinkedIn.
+        - please no markdown formatting, just plain text.
 
         Project Details:{repo_info}
         Readme for the project: {readme}
