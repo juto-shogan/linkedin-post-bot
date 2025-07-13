@@ -10,3 +10,6 @@ env
 
 # language folder
 __pycache__/
+
+# files and folder
+creds.txt
